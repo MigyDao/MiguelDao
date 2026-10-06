@@ -65,8 +65,41 @@ p { color: var(--ink-soft); }
 .button-secondary { background: transparent; color: var(--ink); }
 .button-light { background: var(--white); color: var(--ink); border-color: var(--white); }
 
-.hero-panel { background: var(--ink); color: var(--white); padding: 1.6rem; border-radius: var(--radius); box-shadow: var(--shadow); }
+.hero-panel {
+  background:
+    linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px),
+    var(--ink);
+  background-size: 28px 28px, 28px 28px, auto;
+  color: var(--white);
+  padding: 1.6rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
 .hero-panel p { color: #d7e0db; }
+.hero-symbol-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: .55rem;
+  margin-bottom: 1.35rem;
+}
+.hero-symbol {
+  display: grid;
+  place-items: center;
+  min-height: 64px;
+  border: 1px solid rgba(255,255,255,.16);
+  border-radius: .8rem;
+  background: rgba(255,255,255,.045);
+}
+.hero-symbol svg {
+  width: 34px;
+  height: 34px;
+  fill: none;
+  stroke: #b7cdbf;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
 .panel-kicker { font-size: .85rem; }
 .focus-list { list-style: none; margin: 1.6rem 0; padding: 0; }
 .focus-list li { display: flex; gap: .8rem; align-items: center; padding: .8rem 0; border-top: 1px solid rgba(255,255,255,.14); font-weight: 650; }
