@@ -331,3 +331,68 @@ details p { margin: .85rem 0 0; font-size: .92rem; }
   object-fit: contain;
   background: #eef3f8;
 }
+
+
+/* CX / Quality Analytics Framework */
+.cx-framework-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+.cx-framework-grid article,
+.cx-example-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+  padding: 1.35rem;
+}
+.cx-framework-grid article {
+  min-height: 190px;
+  display: flex;
+  flex-direction: column;
+}
+.cx-framework-grid article span {
+  color: var(--green);
+  font-size: .75rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+}
+.cx-framework-grid article h3 { margin-top: auto; }
+.cx-framework-grid article p { margin-bottom: 0; }
+.cx-example-intro { max-width: 68ch; margin-bottom: 1.4rem; }
+.cx-example-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+.cx-example-card h3 { margin-bottom: .75rem; }
+.cx-response {
+  margin-top: 1.2rem;
+  border-top: 1px solid var(--line);
+  padding-top: .9rem;
+  display: grid;
+  gap: .35rem;
+}
+.cx-response strong {
+  color: var(--green);
+  font-size: .78rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+.cx-response span { color: var(--ink-soft); }
+.cx-learning-callout {
+  margin-top: 1.2rem;
+  padding: 1.2rem 1.35rem;
+  border-radius: var(--radius);
+  background: var(--green-dark);
+  color: white;
+}
+.cx-learning-callout strong { color: #fff; }
+
+@media (max-width: 900px) {
+  .cx-framework-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cx-example-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 620px) {
+  .cx-framework-grid { grid-template-columns: 1fr; }
+}
