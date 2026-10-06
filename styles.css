@@ -130,6 +130,7 @@ p { color: var(--ink-soft); }
 .visual-bed { background: linear-gradient(135deg, #202925, #78583c); }
 .visual-iwtm { background: linear-gradient(135deg, #243b32, #57715d); }
 .visual-character { background: linear-gradient(135deg, #172d3d, #3f6880); }
+.visual-sketchpad { background: linear-gradient(135deg, #19232b, #496474); }
 .visual-equipment { background: linear-gradient(135deg, #252927, #6e706b); }
 .visual-cx { background: linear-gradient(135deg, #3e3448, #806b84); }
 .visual-3d { background: linear-gradient(135deg, #3d452c, #7e8750); }
@@ -315,4 +316,18 @@ details p { margin: .85rem 0 0; font-size: .92rem; }
 @media (max-width: 900px) {
   .intake-grid { grid-template-columns: 1fr; }
   .intake-intro { position: static; }
+}
+
+
+/* Software case-study actions */
+.case-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin-top: 1.4rem;
+}
+.case-actions .button { min-width: 0; }
+.case-figure-showcase img {
+  object-fit: contain;
+  background: #eef3f8;
 }
