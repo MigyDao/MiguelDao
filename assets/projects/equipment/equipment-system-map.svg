@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Equipment Management System architecture</title>
+  <desc id="desc">A sanitized architecture map connecting Equipment Tracker, Maintenance and Repairs, Parts and Consumables, and Projects.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#315b4c"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="720" fill="#f4f0e8"/>
+  <text x="70" y="72" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#315b4c" letter-spacing="2">SYSTEMS &amp; OPERATIONS</text>
+  <text x="70" y="122" font-family="Arial, sans-serif" font-size="42" font-weight="800" fill="#14261f">Equipment Management</text>
+  <text x="70" y="158" font-family="Arial, sans-serif" font-size="18" fill="#5b6963">Sanitized architecture view — no private equipment records</text>
+
+  <g stroke="#315b4c" stroke-width="4" fill="none" marker-end="url(#arrow)">
+    <path d="M600 330 C450 330 390 290 320 255"/>
+    <path d="M600 330 C750 330 810 290 880 255"/>
+    <path d="M600 390 C450 390 390 430 320 475"/>
+    <path d="M600 390 C750 390 810 430 880 475"/>
+  </g>
+
+  <g font-family="Arial, sans-serif">
+    <rect x="440" y="270" width="320" height="180" rx="24" fill="#17382d"/>
+    <text x="600" y="335" text-anchor="middle" font-size="18" font-weight="700" fill="#b8d3c8" letter-spacing="1.5">SOURCE OF TRUTH</text>
+    <text x="600" y="382" text-anchor="middle" font-size="30" font-weight="800" fill="#ffffff">Equipment Tracker</text>
+    <text x="600" y="415" text-anchor="middle" font-size="16" fill="#d8e4df">identity · condition · status · location</text>
+
+    <rect x="70" y="190" width="300" height="130" rx="20" fill="#ffffff" stroke="#c9d2ce" stroke-width="2"/>
+    <text x="220" y="240" text-anchor="middle" font-size="24" font-weight="800" fill="#14261f">Maintenance &amp; Repairs</text>
+    <text x="220" y="275" text-anchor="middle" font-size="16" fill="#5b6963">history · faults · service actions</text>
+
+    <rect x="830" y="190" width="300" height="130" rx="20" fill="#ffffff" stroke="#c9d2ce" stroke-width="2"/>
+    <text x="980" y="240" text-anchor="middle" font-size="24" font-weight="800" fill="#14261f">Parts &amp; Consumables</text>
+    <text x="980" y="275" text-anchor="middle" font-size="16" fill="#5b6963">replacement needs · stock · sourcing</text>
+
+    <rect x="70" y="430" width="300" height="130" rx="20" fill="#ffffff" stroke="#c9d2ce" stroke-width="2"/>
+    <text x="220" y="480" text-anchor="middle" font-size="24" font-weight="800" fill="#14261f">Projects</text>
+    <text x="220" y="515" text-anchor="middle" font-size="16" fill="#5b6963">work using or improving equipment</text>
+
+    <rect x="830" y="430" width="300" height="130" rx="20" fill="#ffffff" stroke="#c9d2ce" stroke-width="2"/>
+    <text x="980" y="480" text-anchor="middle" font-size="24" font-weight="800" fill="#14261f">Decisions</text>
+    <text x="980" y="515" text-anchor="middle" font-size="16" fill="#5b6963">repair · replace · maintain · plan</text>
+
+    <text x="70" y="652" font-size="17" fill="#5b6963">Design principle: support repairability and long-term capability, not inventory counting alone.</text>
+  </g>
+</svg>
