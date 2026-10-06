@@ -1,57 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
-  <title id="title">Reconstructed QA feedback loop</title>
-  <desc id="desc">A reconstructed workflow moving from customer interaction through evaluation, pattern recognition, feedback, coaching and follow-up observation.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+  <title id="title">Customer Experience and Quality Analytics Framework</title>
+  <desc id="desc">A nine-stage quality analytics loop: Observe, Evaluate, Contextualize, Pattern, Diagnose, Prioritize, Respond, Verify, and System Learning.</desc>
   <defs>
     <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L0,6 L9,3 z" fill="#315b4c"/>
+      <path d="M0,0 L0,6 L9,3 z" fill="#315c4b"/>
     </marker>
   </defs>
-  <rect width="1200" height="720" fill="#f4f0e8"/>
-  <text x="70" y="72" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#315b4c" letter-spacing="2">CUSTOMER EXPERIENCE &amp; QUALITY</text>
-  <text x="70" y="122" font-family="Arial, sans-serif" font-size="42" font-weight="800" fill="#14261f">From interactions to usable feedback</text>
-  <text x="70" y="158" font-family="Arial, sans-serif" font-size="18" fill="#5b6963">Reconstructed example based on my QA workflow; no customer or employer data.</text>
+  <rect width="1400" height="820" fill="#f5f2e9"/>
+  <text x="72" y="76" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#315c4b" letter-spacing="2">CUSTOMER EXPERIENCE &amp; QUALITY ANALYTICS</text>
+  <text x="72" y="132" font-family="Arial, sans-serif" font-size="44" font-weight="800" fill="#10231c">From evidence to system learning</text>
+  <text x="72" y="170" font-family="Arial, sans-serif" font-size="18" fill="#43524c">A reusable framework for fair evaluation, diagnosis, intervention and follow-up.</text>
 
-  <g stroke="#315b4c" stroke-width="4" fill="none" marker-end="url(#arrow)">
-    <path d="M245 285 H335"/>
-    <path d="M505 285 H595"/>
-    <path d="M765 285 H855"/>
-    <path d="M940 350 C940 440 820 480 735 480"/>
-    <path d="M565 480 H475"/>
+  <g stroke="#315c4b" stroke-width="4" fill="none" marker-end="url(#arrow)">
+    <path d="M238 300 H298"/>
+    <path d="M458 300 H518"/>
+    <path d="M678 300 H738"/>
+    <path d="M898 300 H958"/>
+    <path d="M1118 300 H1178"/>
+    <path d="M1260 365 C1260 470 1130 500 1055 500"/>
+    <path d="M895 500 H835"/>
+    <path d="M675 500 H615"/>
+    <path d="M455 500 H395"/>
+    <path d="M315 565 C220 650 130 590 155 365"/>
   </g>
 
   <g font-family="Arial, sans-serif">
-    <g>
-      <rect x="75" y="220" width="170" height="130" rx="22" fill="#17382d"/>
-      <text x="160" y="275" text-anchor="middle" font-size="19" font-weight="800" fill="#ffffff">1. Interaction</text>
-      <text x="160" y="305" text-anchor="middle" font-size="14" fill="#d8e4df">real service evidence</text>
-    </g>
-    <g>
-      <rect x="335" y="220" width="170" height="130" rx="22" fill="#ffffff" stroke="#c9d2ce" stroke-width="2"/>
-      <text x="420" y="275" text-anchor="middle" font-size="19" font-weight="800" fill="#14261f">2. Evaluate</text>
-      <text x="420" y="305" text-anchor="middle" font-size="14" fill="#5b6963">against clear criteria</text>
-    </g>
-    <g>
-      <rect x="595" y="220" width="170" height="130" rx="22" fill="#ffffff" stroke="#c9d2ce" stroke-width="2"/>
-      <text x="680" y="270" text-anchor="middle" font-size="19" font-weight="800" fill="#14261f">3. Identify</text>
-      <text x="680" y="296" text-anchor="middle" font-size="19" font-weight="800" fill="#14261f">patterns</text>
-      <text x="680" y="325" text-anchor="middle" font-size="14" fill="#5b6963">repeat issue vs. one-off</text>
-    </g>
-    <g>
-      <rect x="855" y="220" width="270" height="130" rx="22" fill="#17382d"/>
-      <text x="990" y="270" text-anchor="middle" font-size="19" font-weight="800" fill="#ffffff">4. Give usable feedback</text>
-      <text x="990" y="302" text-anchor="middle" font-size="14" fill="#d8e4df">specific · actionable · contextual</text>
-    </g>
-    <g>
-      <rect x="565" y="420" width="170" height="120" rx="22" fill="#ffffff" stroke="#c9d2ce" stroke-width="2"/>
-      <text x="650" y="468" text-anchor="middle" font-size="19" font-weight="800" fill="#14261f">5. Coach /</text>
-      <text x="650" y="494" text-anchor="middle" font-size="19" font-weight="800" fill="#14261f">reinforce</text>
-    </g>
-    <g>
-      <rect x="305" y="420" width="170" height="120" rx="22" fill="#ffffff" stroke="#c9d2ce" stroke-width="2"/>
-      <text x="390" y="468" text-anchor="middle" font-size="19" font-weight="800" fill="#14261f">6. Observe</text>
-      <text x="390" y="497" text-anchor="middle" font-size="14" fill="#5b6963">subsequent performance</text>
-    </g>
-    <path d="M390 540 C270 590 180 555 160 350" stroke="#315b4c" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
-    <text x="70" y="652" font-size="17" fill="#5b6963">The value is the feedback loop: evidence → pattern → action → follow-up.</text>
+    <g><rect x="78" y="235" width="160" height="130" rx="22" fill="#183d31"/><text x="158" y="287" text-anchor="middle" font-size="20" font-weight="800" fill="#fff">1. Observe</text><text x="158" y="318" text-anchor="middle" font-size="14" fill="#dce8df">collect evidence</text></g>
+    <g><rect x="298" y="235" width="160" height="130" rx="22" fill="#fffefa" stroke="#cfc8b8" stroke-width="2"/><text x="378" y="287" text-anchor="middle" font-size="20" font-weight="800" fill="#10231c">2. Evaluate</text><text x="378" y="318" text-anchor="middle" font-size="14" fill="#43524c">clear criteria</text></g>
+    <g><rect x="518" y="235" width="160" height="130" rx="22" fill="#fffefa" stroke="#cfc8b8" stroke-width="2"/><text x="598" y="280" text-anchor="middle" font-size="19" font-weight="800" fill="#10231c">3. Context-</text><text x="598" y="307" text-anchor="middle" font-size="19" font-weight="800" fill="#10231c">ualize</text><text x="598" y="337" text-anchor="middle" font-size="14" fill="#43524c">interpret fairly</text></g>
+    <g><rect x="738" y="235" width="160" height="130" rx="22" fill="#fffefa" stroke="#cfc8b8" stroke-width="2"/><text x="818" y="287" text-anchor="middle" font-size="20" font-weight="800" fill="#10231c">4. Pattern</text><text x="818" y="318" text-anchor="middle" font-size="14" fill="#43524c">one-off vs recurring</text></g>
+    <g><rect x="958" y="235" width="160" height="130" rx="22" fill="#fffefa" stroke="#cfc8b8" stroke-width="2"/><text x="1038" y="287" text-anchor="middle" font-size="20" font-weight="800" fill="#10231c">5. Diagnose</text><text x="1038" y="318" text-anchor="middle" font-size="14" fill="#43524c">likely cause</text></g>
+    <g><rect x="1178" y="235" width="160" height="130" rx="22" fill="#183d31"/><text x="1258" y="287" text-anchor="middle" font-size="20" font-weight="800" fill="#fff">6. Prioritize</text><text x="1258" y="318" text-anchor="middle" font-size="14" fill="#dce8df">risk · reach · recurrence</text></g>
+
+    <g><rect x="895" y="435" width="160" height="130" rx="22" fill="#fffefa" stroke="#cfc8b8" stroke-width="2"/><text x="975" y="487" text-anchor="middle" font-size="20" font-weight="800" fill="#10231c">7. Respond</text><text x="975" y="518" text-anchor="middle" font-size="14" fill="#43524c">match intervention</text></g>
+    <g><rect x="675" y="435" width="160" height="130" rx="22" fill="#fffefa" stroke="#cfc8b8" stroke-width="2"/><text x="755" y="487" text-anchor="middle" font-size="20" font-weight="800" fill="#10231c">8. Verify</text><text x="755" y="518" text-anchor="middle" font-size="14" fill="#43524c">did it work?</text></g>
+    <g><rect x="315" y="425" width="300" height="150" rx="22" fill="#315c4b"/><text x="465" y="482" text-anchor="middle" font-size="21" font-weight="800" fill="#fff">9. System Learning</text><text x="465" y="516" text-anchor="middle" font-size="14" fill="#e6efe9">training · process · tools · standards</text><text x="465" y="541" text-anchor="middle" font-size="14" fill="#e6efe9">feed recurring findings back into the system</text></g>
+
+    <text x="72" y="718" font-size="17" fill="#43524c">Core rule: do not prescribe the intervention before diagnosing the likely cause.</text>
+    <text x="72" y="751" font-size="17" fill="#43524c">Quality improvement is not complete until the loop is closed with follow-up evidence.</text>
   </g>
 </svg>
