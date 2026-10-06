@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Local-First 3D Sketchpad — a desktop 3D concept-modeling tool for maker projects, site planning and practical design workflows.">
+  <meta name="theme-color" content="#10231c">
+  <title>Local-First 3D Sketchpad — Miguel Francis</title>
+  <link rel="icon" href="../assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="shell nav-shell">
+      <a class="brand" href="../index.html" aria-label="Miguel Francis home">
+        <span class="brand-mark" aria-hidden="true">MF</span>
+        <span>Miguel Francis</span>
+      </a>
+      <nav class="case-nav" aria-label="Case study navigation">
+        <a href="../index.html#work">← Selected work</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="case-hero section">
+      <div class="shell case-hero-grid">
+        <div>
+          <p class="eyebrow">Software &amp; Digital Products</p>
+          <h1>Local-First 3D Sketchpad</h1>
+          <p class="hero-copy">A local-first desktop 3D concept-modeling tool for maker projects, site planning and practical design workflows.</p>
+          <div class="case-actions">
+            <a class="button button-primary" href="https://github.com/MigyDao" target="_blank" rel="noreferrer">View my GitHub profile ↗</a>
+          </div>
+        </div>
+        <aside class="case-facts">
+          <p class="panel-kicker">What this demonstrates</p>
+          <ul class="tag-list case-tags">
+            <li>Product development</li>
+            <li>Local-first UX</li>
+            <li>3D scene tools</li>
+            <li>Document-state design</li>
+            <li>Regression testing</li>
+            <li>Debugging</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="case-image-section" aria-labelledby="sketchpad-visual-title">
+      <div class="shell">
+        <figure class="case-figure case-figure-showcase">
+          <img src="../assets/projects/local-first-3d-sketchpad/showcase.webp" alt="Portfolio showcase of Local-First 3D Sketchpad showing its evolution from a simple primitive editor to structured 3D scenes with layers, groups and properties">
+          <figcaption id="sketchpad-visual-title">The application evolved from a minimal three-object prototype into a structured scene workflow used for practical concepts such as site layouts and a folding clothesline design.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section case-section">
+      <div class="shell case-content-grid">
+        <div>
+          <p class="eyebrow">The problem</p>
+          <h2>Make quick 3D concept work practical without making a cloud service part of the core workflow.</h2>
+        </div>
+        <div class="case-copy">
+          <p>I wanted a lightweight desktop tool that could support the kind of spatial thinking I use in maker work: rough site layouts, furniture-scale concepts, object placement and practical design conversations.</p>
+          <p>The goal was not to reproduce a full professional CAD package. It was to build the smallest useful local-first environment for arranging geometry, organizing a scene and keeping the working file under the user's control.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section case-section case-tinted">
+      <div class="shell case-content-grid">
+        <div>
+          <p class="eyebrow">Product evolution</p>
+          <h2>From three primitives to structured scenes with hundreds of objects.</h2>
+        </div>
+        <div class="case-copy">
+          <p>The early prototype focused on the basic interaction model: a ground plane, simple geometry and a navigable 3D viewport. Later iterations added the structure needed for real design work rather than isolated shapes.</p>
+          <ul class="case-list">
+            <li>Box, cylinder and plane creation.</li>
+            <li>Move, Rotate and Scale editing.</li>
+            <li>Layers for visibility, locking and scene organization.</li>
+            <li>Groups and object hierarchy for larger scenes.</li>
+            <li>Editable position, rotation and dimension properties.</li>
+            <li>Grid snapping, measurement and framing controls.</li>
+            <li>Local New / Open / Save / Save As workflows.</li>
+            <li>3D import/export support in the working interface.</li>
+          </ul>
+          <p>Recent working scenes include a detailed backyard/site concept with more than 200 objects and a layered clothesline concept, demonstrating that the interface can move beyond toy examples into practical planning.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section case-section">
+      <div class="shell case-content-grid">
+        <div>
+          <p class="eyebrow">Reliability &amp; debugging</p>
+          <h2>Interaction details became product requirements, not afterthoughts.</h2>
+        </div>
+        <div class="case-copy">
+          <p>One important development pass focused on unsaved-document behavior. An intercepted close event was re-entering the same guard when the application tried to close normally after the user selected Discard.</p>
+          <p>The close flow was corrected so intentional Discard and successful Save can bypass that guard only when appropriate, while Cancel, cancelled saves and failed saves preserve the working document.</p>
+          <p>Regression coverage now explicitly checks clean close, Cancel, Discard, successful save, cancelled save and failed save. At the documented V1 milestone, frontend tests, type checking, linting, the frontend build, Rust formatting, Rust tests and <code>cargo check</code> all passed.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section case-section case-dark">
+      <div class="shell case-content-grid">
+        <div>
+          <p class="eyebrow">My role</p>
+          <h2>Product definition, workflow decisions, review and iterative implementation.</h2>
+        </div>
+        <div class="case-copy">
+          <p>I define the practical use cases, interaction expectations, local-first constraints and acceptance criteria, then work iteratively through implementation, testing and correction. AI-assisted coding helps accelerate implementation and debugging, but it is a tool inside the development process rather than the category the project belongs to.</p>
+          <p><strong>Current boundary:</strong> this case demonstrates a functioning desktop tool in active development. I am not presenting it as a finished commercial CAD product or as a public standalone source repository.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section case-next">
+      <div class="shell">
+        <div class="case-actions">
+          <a class="button button-secondary" href="../index.html#work">← Back to selected work</a>
+          <a class="button button-secondary" href="https://github.com/MigyDao" target="_blank" rel="noreferrer">GitHub profile ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-row">
+      <p>© 2026 Miguel Francis</p>
+      <p>Evidence-backed portfolio case study.</p>
+    </div>
+  </footer>
+</body>
+</html>
