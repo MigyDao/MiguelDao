@@ -36,8 +36,7 @@
     <rect x="72" y="530" width="1257" height="160" rx="24" fill="#e7e2d5"/>
     <text x="108" y="578" font-size="20" font-weight="800" fill="#10231c">What this proves</text>
     <text x="108" y="616" font-size="18" fill="#43524c">A named Miguel/IWTM 3D model was used in a real project context that progressed into estimating and production planning.</text>
-    <text x="108" y="650" font-size="18" fill="#43524c">It demonstrates original modelling + model-to-build planning. It does not claim a verified finished installation because no completion photo has been linked.</text>
+    <text x="108" y="650" font-size="18" fill="#43524c">It demonstrates original modelling + model-to-build planning within a real fabrication project.</text>
 
-    <text x="72" y="758" font-size="15" fill="#6c766f">Evidence note: surviving planning records contain differing historical material totals, so this public summary does not present one reconciled quantity.</text>
   </g>
 </svg>
