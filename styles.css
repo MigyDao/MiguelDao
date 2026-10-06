@@ -289,3 +289,30 @@ details p { margin: .85rem 0 0; font-size: .92rem; }
   .case-gallery,
   .case-gallery-two { grid-template-columns: 1fr; }
 }
+
+/* Work With Miguel intake */
+.intake-hero { padding-top: clamp(4.5rem, 8vw, 7rem); }
+.intake-grid {
+  display: grid;
+  grid-template-columns: minmax(0, .72fr) minmax(320px, 1.28fr);
+  gap: clamp(2.5rem, 7vw, 6rem);
+  align-items: start;
+}
+.intake-intro { position: sticky; top: 118px; }
+.intake-intro h1 { font-size: clamp(2.7rem, 6vw, 5.5rem); max-width: 10ch; }
+.intake-fallback { margin-top: 1.6rem; font-size: .95rem; }
+.intake-fallback a { font-weight: 800; text-underline-offset: .2em; }
+.intake-form-shell {
+  min-height: 520px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+  padding: clamp(1rem, 2vw, 1.6rem);
+  box-shadow: var(--shadow);
+}
+.intake-form-shell iframe { display: block; width: 100%; border: 0; }
+
+@media (max-width: 900px) {
+  .intake-grid { grid-template-columns: 1fr; }
+  .intake-intro { position: static; }
+}
