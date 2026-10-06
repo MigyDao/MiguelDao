@@ -27,3 +27,19 @@ if (toggle && nav) {
 
 const year = document.querySelector('#year');
 if (year) year.textContent = new Date().getFullYear();
+
+
+/* Preserve explicit theme previews while navigating the portfolio. */
+const portfolioTheme = window.PORTFOLIO_THEME;
+if (portfolioTheme?.previewTheme) {
+  document.querySelectorAll('a[href]').forEach((link) => {
+    const href = link.getAttribute('href');
+    if (!href || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:')) return;
+    try {
+      const url = new URL(href, window.location.href);
+      if (url.origin !== window.location.origin) return;
+      url.searchParams.set('theme', portfolioTheme.previewTheme);
+      link.href = url.href;
+    } catch (_) {}
+  });
+}
