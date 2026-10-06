@@ -89,7 +89,8 @@ p { color: var(--ink-soft); }
 .project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.35rem; }
 .project-card { border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--paper); }
 .project-featured { grid-column: 1 / -1; display: grid; grid-template-columns: 1.1fr 1fr; }
-.project-visual { min-height: 260px; padding: 1.6rem; display: flex; flex-direction: column; justify-content: space-between; color: white; overflow: hidden; position: relative; }
+.project-visual { min-height: 260px; padding: 1.6rem; display: flex; flex-direction: column; justify-content: space-between; color: white; overflow: hidden; position: relative; text-decoration: none; }
+.project-visual:focus-visible { outline: 3px solid currentColor; outline-offset: -4px; }
 .project-visual::after { content: ""; position: absolute; width: 55%; aspect-ratio: 1; border: 1px solid rgba(255,255,255,.3); border-radius: 50%; right: -10%; bottom: -35%; }
 .project-visual span { text-transform: uppercase; font-size: .72rem; letter-spacing: .12em; font-weight: 800; }
 .project-visual strong { font-size: clamp(2rem, 4vw, 3.7rem); line-height: .95; letter-spacing: -.05em; max-width: 8ch; }
