@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Reconstructed QA feedback loop</title>
+  <desc id="desc">A reconstructed workflow moving from customer interaction through evaluation, pattern recognition, feedback, coaching and follow-up observation.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#315b4c"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="720" fill="#f4f0e8"/>
+  <text x="70" y="72" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#315b4c" letter-spacing="2">CUSTOMER EXPERIENCE &amp; QUALITY</text>
+  <text x="70" y="122" font-family="Arial, sans-serif" font-size="42" font-weight="800" fill="#14261f">From interactions to usable feedback</text>
+  <text x="70" y="158" font-family="Arial, sans-serif" font-size="18" fill="#5b6963">Reconstructed example based on my QA workflow; no customer or employer data.</text>
+
+  <g stroke="#315b4c" stroke-width="4" fill="none" marker-end="url(#arrow)">
+    <path d="M245 285 H335"/>
+    <path d="M505 285 H595"/>
+    <path d="M765 285 H855"/>
+    <path d="M940 350 C940 440 820 480 735 480"/>
+    <path d="M565 480 H475"/>
+  </g>
+
+  <g font-family="Arial, sans-serif">
+    <g>
+      <rect x="75" y="220" width="170" height="130" rx="22" fill="#17382d"/>
+      <text x="160" y="275" text-anchor="middle" font-size="19" font-weight="800" fill="#ffffff">1. Interaction</text>
+      <text x="160" y="305" text-anchor="middle" font-size="14" fill="#d8e4df">real service evidence</text>
+    </g>
+    <g>
+      <rect x="335" y="220" width="170" height="130" rx="22" fill="#ffffff" stroke="#c9d2ce" stroke-width="2"/>
+      <text x="420" y="275" text-anchor="middle" font-size="19" font-weight="800" fill="#14261f">2. Evaluate</text>
+      <text x="420" y="305" text-anchor="middle" font-size="14" fill="#5b6963">against clear criteria</text>
+    </g>
+    <g>
+      <rect x="595" y="220" width="170" height="130" rx="22" fill="#ffffff" stroke="#c9d2ce" stroke-width="2"/>
+      <text x="680" y="270" text-anchor="middle" font-size="19" font-weight="800" fill="#14261f">3. Identify</text>
+      <text x="680" y="296" text-anchor="middle" font-size="19" font-weight="800" fill="#14261f">patterns</text>
+      <text x="680" y="325" text-anchor="middle" font-size="14" fill="#5b6963">repeat issue vs. one-off</text>
+    </g>
+    <g>
+      <rect x="855" y="220" width="270" height="130" rx="22" fill="#17382d"/>
+      <text x="990" y="270" text-anchor="middle" font-size="19" font-weight="800" fill="#ffffff">4. Give usable feedback</text>
+      <text x="990" y="302" text-anchor="middle" font-size="14" fill="#d8e4df">specific · actionable · contextual</text>
+    </g>
+    <g>
+      <rect x="565" y="420" width="170" height="120" rx="22" fill="#ffffff" stroke="#c9d2ce" stroke-width="2"/>
+      <text x="650" y="468" text-anchor="middle" font-size="19" font-weight="800" fill="#14261f">5. Coach /</text>
+      <text x="650" y="494" text-anchor="middle" font-size="19" font-weight="800" fill="#14261f">reinforce</text>
+    </g>
+    <g>
+      <rect x="305" y="420" width="170" height="120" rx="22" fill="#ffffff" stroke="#c9d2ce" stroke-width="2"/>
+      <text x="390" y="468" text-anchor="middle" font-size="19" font-weight="800" fill="#14261f">6. Observe</text>
+      <text x="390" y="497" text-anchor="middle" font-size="14" fill="#5b6963">subsequent performance</text>
+    </g>
+    <path d="M390 540 C270 590 180 555 160 350" stroke="#315b4c" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+    <text x="70" y="652" font-size="17" fill="#5b6963">The value is the feedback loop: evidence → pattern → action → follow-up.</text>
+  </g>
+</svg>
