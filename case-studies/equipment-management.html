@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Equipment Management System — Miguel Francis</title>
+  <meta name="description" content="A case study in systems architecture: connecting equipment identity, maintenance history, parts planning and project work in Notion.">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="shell nav-wrap">
+    <a class="brand" href="../index.html">Miguel Francis</a>
+    <nav class="case-nav" aria-label="Case study navigation"><a href="../index.html#work">← Back to selected work</a></nav>
+  </div>
+</header>
+<main>
+<section class="section case-hero">
+  <div class="shell case-hero-grid">
+    <div>
+      <p class="eyebrow">Systems &amp; Operations</p>
+      <h1>Equipment Management System</h1>
+      <p class="hero-deck">Turning tools, maintenance events, parts needs and project work into one maintainable operating system.</p>
+    </div>
+    <aside class="case-facts">
+      <p class="panel-kicker">Case snapshot</p>
+      <p><strong>Role</strong><br>System design &amp; implementation</p>
+      <p><strong>Platform</strong><br>Notion</p>
+      <p><strong>Focus</strong><br>Equipment · maintenance · parts · projects</p>
+      <p><strong>Status</strong><br>In use and evolving</p>
+    </aside>
+  </div>
+</section>
+
+<section class="section case-section">
+  <div class="shell case-content-grid">
+    <div><p class="eyebrow">Challenge</p><h2>Physical equipment creates information that is easy to scatter.</h2></div>
+    <div class="case-copy">
+      <p>Condition, repairs, consumables, replacement parts and project use can end up split across memory, notes and one-off task lists. That makes it harder to answer basic operating questions: What condition is this tool in? What failed last time? Which part does it need? Is the repair already part of a project?</p>
+      <p>I designed the system around a central equipment record rather than treating maintenance as a disconnected checklist.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section case-image-section">
+  <div class="shell">
+    <figure class="case-figure">
+      <img src="../assets/projects/equipment/equipment-system-map.svg" alt="Sanitized map showing Equipment Tracker connected to Maintenance and Repairs, Parts and Consumables, Projects, and operating decisions">
+      <figcaption>Sanitized architecture view of the linked system. No private equipment records are shown.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section case-section case-tinted">
+  <div class="shell case-content-grid">
+    <div><p class="eyebrow">Architecture</p><h2>Keep identity separate from events and needs.</h2></div>
+    <div class="case-copy">
+      <ul class="case-list">
+        <li><strong>Equipment Tracker:</strong> the durable identity, condition and current-state record.</li>
+        <li><strong>Maintenance &amp; Repairs:</strong> historical faults, service actions and repair work.</li>
+        <li><strong>Parts &amp; Consumables:</strong> replacement needs, recurring consumables and sourcing context.</li>
+        <li><strong>Projects:</strong> larger work that uses, repairs or improves equipment.</li>
+      </ul>
+      <p>This keeps the current state readable without erasing the history that explains how it got there.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section case-section">
+  <div class="shell case-content-grid">
+    <div><p class="eyebrow">Design principle</p><h2>Support repairability and long-term capability.</h2></div>
+    <div class="case-copy">
+      <p>The system is not just an inventory count. It is meant to make repair, maintenance and replacement decisions easier to reason about over time. The same architecture also makes it possible to connect physical workshop activity with planning and project management rather than keeping those worlds separate.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section case-section case-dark">
+  <div class="shell case-content-grid">
+    <div><p class="eyebrow">Outcome &amp; limits</p><h2>A clearer source of truth, without invented savings claims.</h2></div>
+    <div class="case-copy">
+      <p>The system centralizes equipment condition, repair history and parts planning into one maintainable structure. It demonstrates relational system design and practical maintenance thinking.</p>
+      <p>Financial savings, uptime improvements and time savings have not been quantified, so this case intentionally does not attach percentages to the outcome.</p>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer"><div class="shell footer-row"><p>© Miguel Francis</p><a href="../index.html#contact">Work with me →</a></div></footer>
+</body>
+</html>
