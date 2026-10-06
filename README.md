@@ -28,3 +28,8 @@ Open `index.html` in a browser, or serve the folder using any simple static web 
 ## Deployment
 
 Target: GitHub Pages project site for `MigyDao/MiguelDao`.
+
+
+## Public site
+
+GitHub Pages target: https://migydao.github.io/MiguelDao/
