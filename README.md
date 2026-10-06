@@ -33,3 +33,20 @@ Target: GitHub Pages project site for `MigyDao/MiguelDao`.
 ## Public site
 
 GitHub Pages target: https://migydao.github.io/MiguelDao/
+
+
+## Portfolio theme system
+
+The portfolio keeps two maintained visual variants in the same codebase:
+
+- **Light / Original** — the original warm light portfolio.
+- **Dark / Technical Maker** — the active production theme.
+
+The active default is controlled by `DEFAULT_THEME` in `theme.js`.
+
+Preview either maintained variant without changing the production default:
+
+- `?theme=dark`
+- `?theme=light`
+
+Explicit previews are preserved while navigating internal portfolio links. There is intentionally no public theme-toggle UI at this stage.
