@@ -247,6 +247,10 @@ details p { margin: .85rem 0 0; font-size: .92rem; }
   max-height: none;
   object-fit: cover;
 }
+.farm-gallery .case-figure img {
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
 @media (max-width: 800px) {
   .case-gallery,
   .case-gallery-two { grid-template-columns: 1fr; }
