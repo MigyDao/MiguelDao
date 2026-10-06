@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+  <title id="title">Under Stairs Storage model-to-planning evidence</title>
+  <desc id="desc">A public-safe evidence summary showing a July 2021 SketchUp model, a quote for two storage units, and component-level fabrication planning across drawers, shelving, framing, hardware, finishes and labour.</desc>
+  <rect width="1400" height="820" fill="#f5f2e9"/>
+  <text x="72" y="78" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#315c4b" letter-spacing="2">NAMED MODEL → FABRICATION PLANNING</text>
+  <text x="72" y="136" font-family="Arial, sans-serif" font-size="45" font-weight="800" fill="#10231c">Under Stairs Storage · 2021</text>
+  <text x="72" y="176" font-family="Arial, sans-serif" font-size="18" fill="#43524c">A surviving project trail connects the SketchUp concept to real estimating and build planning.</text>
+
+  <g font-family="Arial, sans-serif">
+    <rect x="72" y="240" width="365" height="220" rx="24" fill="#183d31"/>
+    <text x="108" y="290" font-size="18" font-weight="800" fill="#a9cbbd">01 · MODEL</text>
+    <text x="108" y="335" font-size="28" font-weight="800" fill="#fff">SketchUp concept</text>
+    <text x="108" y="378" font-size="17" fill="#dce8df">Archived screenshot titled</text>
+    <text x="108" y="408" font-size="17" fill="#dce8df">“Under Stairs Storage”</text>
+    <text x="108" y="438" font-size="17" fill="#dce8df">dated July 27, 2021.</text>
+
+    <rect x="518" y="240" width="365" height="220" rx="24" fill="#fffefa" stroke="#cfc8b8" stroke-width="2"/>
+    <text x="554" y="290" font-size="18" font-weight="800" fill="#315c4b">02 · SCOPE / QUOTE</text>
+    <text x="554" y="335" font-size="28" font-weight="800" fill="#10231c">Two storage units</text>
+    <text x="554" y="378" font-size="17" fill="#43524c">IWTM quote dated July 27, 2021</text>
+    <text x="554" y="408" font-size="17" fill="#43524c">for two under-stairs storage units,</text>
+    <text x="554" y="438" font-size="17" fill="#43524c">materials, hardware and labour.</text>
+
+    <rect x="964" y="240" width="365" height="220" rx="24" fill="#fffefa" stroke="#cfc8b8" stroke-width="2"/>
+    <text x="1000" y="290" font-size="18" font-weight="800" fill="#315c4b">03 · BUILD PLANNING</text>
+    <text x="1000" y="335" font-size="28" font-weight="800" fill="#10231c">Component breakdown</text>
+    <text x="1000" y="378" font-size="17" fill="#43524c">Drawer faces · bottoms · frames</text>
+    <text x="1000" y="408" font-size="17" fill="#43524c">Shelves/supports · framing · casters</text>
+    <text x="1000" y="438" font-size="17" fill="#43524c">Hardware · finish · labour planning</text>
+
+    <path d="M437 350 H500" stroke="#315c4b" stroke-width="5"/>
+    <polygon points="500,350 480,338 480,362" fill="#315c4b"/>
+    <path d="M883 350 H946" stroke="#315c4b" stroke-width="5"/>
+    <polygon points="946,350 926,338 926,362" fill="#315c4b"/>
+
+    <rect x="72" y="530" width="1257" height="160" rx="24" fill="#e7e2d5"/>
+    <text x="108" y="578" font-size="20" font-weight="800" fill="#10231c">What this proves</text>
+    <text x="108" y="616" font-size="18" fill="#43524c">A named Miguel/IWTM 3D model was used in a real project context that progressed into estimating and production planning.</text>
+    <text x="108" y="650" font-size="18" fill="#43524c">It demonstrates original modelling + model-to-build planning. It does not claim a verified finished installation because no completion photo has been linked.</text>
+
+    <text x="72" y="758" font-size="15" fill="#6c766f">Evidence note: surviving planning records contain differing historical material totals, so this public summary does not present one reconciled quantity.</text>
+  </g>
+</svg>
