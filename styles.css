@@ -552,6 +552,8 @@ details p { margin: .85rem 0 0; font-size: .92rem; }
 .svc-price-label { margin-bottom: .3rem; color: var(--ink-soft); font-size: .8rem; font-weight: 700; }
 .svc-price-value { color: var(--ink); font-size: clamp(1.65rem, 2.6vw, 2.25rem); line-height: 1.2; font-weight: 800; letter-spacing: -.045em; margin: 0; }
 .svc-price-value span { color: var(--ink-soft); font-size: .82rem; letter-spacing: 0; font-weight: 600; }
+.svc-price-secondary { color: var(--ink-soft); border-top: 1px solid var(--line); margin: .85rem 0 0; padding-top: .65rem; font-size: .83rem; line-height: 1.5; }
+.svc-price-secondary strong { color: var(--ink); font-weight: 800; }
 .svc-details { border-block: 1px solid var(--line); padding: .85rem 0; }
 .svc-details summary { display: flex; align-items: center; justify-content: space-between; gap: .8rem; list-style: none; font-size: .88rem; }
 .svc-details summary::-webkit-details-marker { display: none; }
