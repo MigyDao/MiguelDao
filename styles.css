@@ -617,3 +617,6 @@ details p { margin: .85rem 0 0; font-size: .92rem; }
  .svc-contact-panel { padding: 2rem 1.45rem; }
  .svc-proof-tile img { aspect-ratio: 16 / 9; }
 }
+
+.path-primary .svc-path-link { display: inline-flex; align-items: center; gap: .35rem; color: #fff; font-weight: 750; text-underline-offset: .22em; }
+[data-theme="dark"] .path-primary .svc-path-link { color: #eef3f1; }
