@@ -620,3 +620,36 @@ details p { margin: .85rem 0 0; font-size: .92rem; }
 
 .path-primary .svc-path-link { display: inline-flex; align-items: center; gap: .35rem; color: #fff; font-weight: 750; text-underline-offset: .22em; }
 [data-theme="dark"] .path-primary .svc-path-link { color: #eef3f1; }
+
+/* Kitchen-led 3D planning case-study introduction. */
+.design-feature-hero .case-hero-grid {
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+  align-items: center;
+  gap: clamp(2rem, 5vw, 5rem);
+}
+.design-feature-card { padding: clamp(1rem, 2vw, 1.6rem); min-width: 0; }
+.design-feature-title { margin-bottom: .8rem; }
+.design-feature-title strong,
+.design-feature-title span { display: block; }
+.design-feature-title strong { margin-bottom: .2rem; }
+.design-feature-figure { margin: 0; }
+.design-feature-figure a { display: block; }
+.design-feature-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  border: 1px solid var(--line);
+  border-radius: calc(var(--radius) * .7);
+  background: var(--paper);
+}
+.design-feature-enlarge { text-align: right; font-size: .82rem; font-weight: 750; margin: .5rem 0 1rem; }
+.design-feature-enlarge a { text-underline-offset: .2em; }
+.design-feature-meta { border-top: 1px solid var(--line); padding-top: .8rem; }
+.design-feature-meta p { margin: 0; }
+.design-feature-meta p + p { margin-top: .8rem; }
+@media (max-width: 900px) {
+  .design-feature-hero .case-hero-grid { grid-template-columns: 1fr; }
+  .design-feature-hero .hero-copy { max-width: 68ch; }
+}
