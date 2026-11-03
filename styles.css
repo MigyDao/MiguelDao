@@ -541,6 +541,7 @@ details p { margin: .85rem 0 0; font-size: .92rem; }
 .svc-section-head h2 { margin-bottom: 0; max-width: none; }
 .svc-section-head > p { max-width: 46ch; margin-bottom: .1rem; }
 .svc-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.1rem; align-items: stretch; }
+.svc-feature-card { grid-column: 1 / -1; }
 .svc-card { display: flex; flex-direction: column; min-width: 0; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: clamp(1.25rem, 2.4vw, 1.8rem); }
 .svc-group:nth-of-type(even) .svc-card { background: var(--white); }
 .svc-card-top { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: 2.2rem; }
