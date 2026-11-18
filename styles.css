@@ -668,3 +668,66 @@ details p { margin: .85rem 0 0; font-size: .92rem; }
   opacity: .8;
   pointer-events: none;
 }
+
+
+/* Portfolio homepage composition: keep the complete introduction and focus panel
+   legible together at common desktop sizes, without shrinking the entire site. */
+.portfolio-home .hero { padding-block: clamp(2.35rem, 4.5vw, 4.3rem); }
+.portfolio-home .hero-grid {
+  grid-template-columns: minmax(0, 1.65fr) minmax(290px, .72fr);
+  align-items: center;
+  gap: clamp(1.7rem, 4.5vw, 4.5rem);
+}
+.portfolio-home .hero h1 {
+  font-size: clamp(2.6rem, 4.15vw, 3.8rem);
+  line-height: 1.07;
+  max-width: 24ch;
+  margin-bottom: 1.15rem;
+}
+.portfolio-home .hero .hero-copy {
+  font-size: clamp(1rem, 1.45vw, 1.16rem);
+  line-height: 1.55;
+  max-width: 66ch;
+}
+.portfolio-home .hero .actions { margin-top: 1.45rem; }
+.portfolio-home .section:not(.hero) { padding-block: clamp(3.5rem, 6vw, 6rem); }
+.site-nav a { display: inline-flex; align-items: center; gap: .37rem; }
+.site-nav .ui-icon { width: 1.05em; height: 1.05em; margin: 0; opacity: .85; }
+.site-nav a[aria-current="page"] { color: var(--ink); font-weight: 800; }
+.svc-grid--support { grid-template-columns: repeat(2,minmax(0,1fr)); }
+.svc-grid--support .svc-feature-card { grid-column: auto; }
+.svc-grid--support .svc-price { margin-top: auto; }
+.alignment-hero { padding-top: clamp(3rem, 6vw, 5.5rem); }
+.alignment-grid { display: grid; grid-template-columns: minmax(0,1.55fr) minmax(260px,.75fr); gap: clamp(2rem,5vw,5rem); align-items: center; }
+.alignment-hero h1 { max-width: 20ch; font-size: clamp(2.65rem,5.5vw,5rem); }
+.alignment-aside { padding: clamp(1.4rem,3vw,2.2rem); border: 1px solid var(--line); background: var(--white); border-radius: var(--radius); }
+.alignment-aside h2 { font-size: 1.45rem; margin-bottom: 1.4rem; }
+.alignment-aside ol { list-style: none; margin: 0; padding: 0; }
+.alignment-aside li { border-top: 1px solid var(--line); padding: .85rem 0; }
+.alignment-aside li span { display: block; font-size: .75rem; font-weight: 800; color: var(--green); }
+.alignment-aside li strong { font-size: .96rem; }
+.alignment-options { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1.2rem; margin-top: 1.7rem; }
+.alignment-option { border: 1px solid var(--line); background: var(--white); padding: clamp(1.4rem,2.6vw,2rem); border-radius: var(--radius); }
+.alignment-option h3 { margin-top: .4rem; }
+.alignment-option .alignment-price { font-size: clamp(1.7rem,3vw,2.5rem); font-weight: 800; color: var(--ink); margin-bottom: .45rem; line-height: 1.22; }
+.alignment-option .alignment-price span { font-size: .95rem; font-weight: 600; color: var(--ink-soft); }
+.alignment-copy { max-width: 76ch; }
+.alignment-copy h2 { max-width: 25ch; }
+.alignment-copy h3 { margin-top: 1.65rem; }
+.alignment-copy li { margin-bottom: .55rem; color: var(--ink-soft); }
+.alignment-summary-note { border-top: 1px solid var(--line); padding-top: 1rem; margin-top: 1.6rem; }
+@media (max-width: 1000px) {
+  .portfolio-home .hero-grid { grid-template-columns: 1fr; }
+  .portfolio-home .hero-panel { max-width: 680px; }
+  .alignment-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 760px) {
+  .svc-grid--support, .alignment-options { grid-template-columns: 1fr; }
+}
+@media (max-width: 700px) {
+  .portfolio-home .hero { padding-block: 2.75rem; }
+  .portfolio-home .hero h1 { font-size: clamp(2.4rem,10.5vw,3.45rem); max-width: 22ch; }
+  .portfolio-home .hero-grid { gap: 2rem; }
+  .portfolio-home .section:not(.hero) { padding-block: 3.4rem; }
+  .site-nav a { display: flex; padding: .8rem 0; }
+}
