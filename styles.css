@@ -749,7 +749,7 @@ details p { margin: .85rem 0 0; font-size: .92rem; }
   font-size: clamp(2rem, 3.35vw, 3.25rem);
   line-height: 1.1;
 }
-.portfolio-home .section-heading { margin-bottom: 1.6rem; }
+.portfolio-home :is(.capabilities, .selected-work, .about, .experience, .work-paths, .contact) .section-heading { margin-bottom: 1.6rem; }
 .portfolio-home .capability-card { min-height: 182px; padding: 1.25rem; }
 .portfolio-home .capability-card h3 { font-size: 1.18rem; margin-bottom: .45rem; }
 .portfolio-home .capability-card p { font-size: .93rem; line-height: 1.45; }
