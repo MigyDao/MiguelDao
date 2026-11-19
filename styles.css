@@ -668,3 +668,222 @@ details p { margin: .85rem 0 0; font-size: .92rem; }
   opacity: .8;
   pointer-events: none;
 }
+
+
+/* Portfolio homepage composition: keep the complete introduction and focus panel
+   legible together at common desktop sizes, without shrinking the entire site. */
+.portfolio-home .hero { padding-block: clamp(2.35rem, 4.5vw, 4.3rem); }
+.portfolio-home .hero-grid {
+  grid-template-columns: minmax(0, 1.65fr) minmax(290px, .72fr);
+  align-items: center;
+  gap: clamp(1.7rem, 4.5vw, 4.5rem);
+}
+.portfolio-home .hero h1 {
+  font-size: clamp(2.6rem, 4.15vw, 3.8rem);
+  line-height: 1.07;
+  max-width: 24ch;
+  margin-bottom: 1.15rem;
+}
+.portfolio-home .hero .hero-copy {
+  font-size: clamp(1rem, 1.45vw, 1.16rem);
+  line-height: 1.55;
+  max-width: 66ch;
+}
+.portfolio-home .hero .actions { margin-top: 1.45rem; }
+.portfolio-home .section:not(.hero) { padding-block: clamp(3.5rem, 6vw, 6rem); }
+.site-nav a { display: inline-flex; align-items: center; gap: .37rem; }
+.site-nav .ui-icon { width: 1.05em; height: 1.05em; margin: 0; opacity: .85; }
+.site-nav a[aria-current="page"] { color: var(--ink); font-weight: 800; }
+.svc-grid--support { grid-template-columns: repeat(2,minmax(0,1fr)); }
+.svc-grid--support .svc-feature-card { grid-column: auto; }
+.svc-grid--support .svc-price { margin-top: auto; }
+.alignment-hero { padding-top: clamp(3rem, 6vw, 5.5rem); }
+.alignment-grid { display: grid; grid-template-columns: minmax(0,1.55fr) minmax(260px,.75fr); gap: clamp(2rem,5vw,5rem); align-items: center; }
+.alignment-hero h1 { max-width: 20ch; font-size: clamp(2.65rem,5.5vw,5rem); }
+.alignment-aside { padding: clamp(1.4rem,3vw,2.2rem); border: 1px solid var(--line); background: var(--white); border-radius: var(--radius); }
+.alignment-aside h2 { font-size: 1.45rem; margin-bottom: 1.4rem; }
+.alignment-aside ol { list-style: none; margin: 0; padding: 0; }
+.alignment-aside li { border-top: 1px solid var(--line); padding: .85rem 0; }
+.alignment-aside li span { display: block; font-size: .75rem; font-weight: 800; color: var(--green); }
+.alignment-aside li strong { font-size: .96rem; }
+.alignment-options { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1.2rem; margin-top: 1.7rem; }
+.alignment-option { border: 1px solid var(--line); background: var(--white); padding: clamp(1.4rem,2.6vw,2rem); border-radius: var(--radius); }
+.alignment-option h3 { margin-top: .4rem; }
+.alignment-option .alignment-price { font-size: clamp(1.7rem,3vw,2.5rem); font-weight: 800; color: var(--ink); margin-bottom: .45rem; line-height: 1.22; }
+.alignment-option .alignment-price span { font-size: .95rem; font-weight: 600; color: var(--ink-soft); }
+.alignment-copy { max-width: 76ch; }
+.alignment-copy h2 { max-width: 25ch; }
+.alignment-copy h3 { margin-top: 1.65rem; }
+.alignment-copy li { margin-bottom: .55rem; color: var(--ink-soft); }
+.alignment-summary-note { border-top: 1px solid var(--line); padding-top: 1rem; margin-top: 1.6rem; }
+@media (max-width: 1000px) {
+  .portfolio-home .hero-grid { grid-template-columns: 1fr; }
+  .portfolio-home .hero-panel { max-width: 680px; }
+  .alignment-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 760px) {
+  .svc-grid--support, .alignment-options { grid-template-columns: 1fr; }
+}
+@media (max-width: 700px) {
+  .portfolio-home .hero { padding-block: 2.75rem; }
+  .portfolio-home .hero h1 { font-size: clamp(2.4rem,10.5vw,3.45rem); max-width: 22ch; }
+  .portfolio-home .hero-grid { gap: 2rem; }
+  .portfolio-home .section:not(.hero) { padding-block: 3.4rem; }
+  .site-nav a { display: flex; padding: .8rem 0; }
+}
+
+
+/* Nov 18 owner preview refinement: denser sections, not a site-wide zoom change.
+   The already accepted homepage hero and Approach layout retain their sizing. */
+.portfolio-home .section.capabilities,
+.portfolio-home .section.selected-work,
+.portfolio-home .section.about,
+.portfolio-home .section.work-paths {
+  padding-block: clamp(2.6rem, 4.2vw, 3.7rem);
+}
+.portfolio-home .section.experience {
+  padding-block: clamp(1.5rem, 2.4vw, 2.3rem) clamp(2.6rem, 4vw, 3.6rem);
+}
+.portfolio-home .section.contact { padding-block: clamp(2.7rem, 4.5vw, 4.1rem); }
+.portfolio-home :is(.capabilities, .selected-work, .about, .experience, .contact) h2 {
+  font-size: clamp(2rem, 3.35vw, 3.25rem);
+  line-height: 1.1;
+}
+.portfolio-home :is(.capabilities, .selected-work, .about, .experience, .work-paths, .contact) .section-heading { margin-bottom: 1.6rem; }
+.portfolio-home .capability-card { min-height: 182px; padding: 1.25rem; }
+.portfolio-home .capability-card h3 { font-size: 1.18rem; margin-bottom: .45rem; }
+.portfolio-home .capability-card p { font-size: .93rem; line-height: 1.45; }
+
+.portfolio-home .selected-work .project-grid { gap: 1rem; }
+.portfolio-home .selected-work .project-body { padding: 1.15rem 1.25rem; }
+.portfolio-home .selected-work .project-body h3 {
+  font-size: clamp(1.25rem, 1.7vw, 1.5rem);
+  margin-bottom: .48rem;
+}
+.portfolio-home .selected-work .project-meta {
+  font-size: .72rem;
+  margin-bottom: .4rem;
+}
+.portfolio-home .selected-work .project-body > p:not(.project-meta) {
+  font-size: .94rem;
+  line-height: 1.46;
+  margin-bottom: .7rem;
+}
+.portfolio-home .selected-work .tag-list { margin: .7rem 0; gap: .35rem; }
+.portfolio-home .selected-work .tag-list li {
+  font-size: .72rem;
+  padding: .24rem .48rem;
+}
+.portfolio-home .selected-work .project-body details { padding-top: .55rem; }
+.portfolio-home .selected-work .project-body summary { font-size: .9rem; }
+.portfolio-home .selected-work .project-link { margin-top: .55rem; font-size: .91rem; }
+
+.portfolio-home .experience .timeline article {
+  gap: 1rem;
+  padding-block: .78rem;
+}
+.portfolio-home .experience .timeline h3 { font-size: 1.04rem; line-height: 1.35; }
+.portfolio-home .experience .timeline p { font-size: .92rem; line-height: 1.42; }
+
+.portfolio-home .work-paths .path-grid { gap: 1rem; }
+.portfolio-home .work-paths .path-card { padding: clamp(1.3rem, 2.4vw, 2rem); }
+.portfolio-home .work-paths .path-card h2 {
+  font-size: clamp(2rem, 3vw, 2.65rem);
+  margin-bottom: .8rem;
+}
+.portfolio-home .work-paths .path-card p:not(.eyebrow),
+.portfolio-home .work-paths .path-card li { font-size: .94rem; line-height: 1.43; }
+.portfolio-home .work-paths .path-card ul {
+  margin-block: .9rem 1.25rem;
+}
+.portfolio-home .work-paths .path-card li { margin-bottom: .18rem; }
+.portfolio-home .work-paths .path-card .actions { margin-top: 1.25rem; }
+.portfolio-home .work-paths .path-card .button {
+  min-height: 44px;
+  padding: .67rem 1rem;
+}
+
+.svc-package-line { display: block; margin-top: .35rem; }
+
+/* Scope the compact presentation to service categories 01, 02 and 04.
+   Technology & Learning (03) is explicitly left as accepted. */
+@media (min-width: 1001px) {
+  :is(#build-care, #design-deliver, #personal-practical-support) {
+    padding-block: clamp(1.75rem, 2.8vw, 2.55rem);
+  }
+  :is(#build-care, #design-deliver, #personal-practical-support) .svc-section-head {
+    margin-bottom: 1.05rem;
+    gap: .8rem 2rem;
+  }
+  :is(#build-care, #design-deliver, #personal-practical-support) .svc-section-head h2 {
+    font-size: clamp(2.2rem, 3.1vw, 2.85rem);
+    line-height: 1.08;
+  }
+  :is(#build-care, #design-deliver, #personal-practical-support) .svc-section-head .eyebrow {
+    margin-bottom: .4rem;
+  }
+  :is(#build-care, #design-deliver, #personal-practical-support) .svc-card {
+    padding: clamp(1.1rem, 1.5vw, 1.35rem);
+  }
+  :is(#build-care, #design-deliver, #personal-practical-support) .svc-card-top {
+    margin-bottom: 1rem;
+  }
+  :is(#build-care, #design-deliver, #personal-practical-support) .svc-card h3 {
+    font-size: clamp(1.3rem, 1.8vw, 1.55rem);
+    line-height: 1.13;
+    margin-bottom: .6rem;
+  }
+  :is(#build-care, #design-deliver, #personal-practical-support) .svc-description {
+    font-size: .93rem;
+    line-height: 1.44;
+    margin-bottom: .75rem;
+  }
+  :is(#build-care, #design-deliver, #personal-practical-support) .svc-price {
+    padding-top: .75rem;
+    padding-bottom: .65rem;
+  }
+  :is(#build-care, #design-deliver, #personal-practical-support) .svc-price-value {
+    font-size: clamp(1.55rem, 2.15vw, 1.95rem);
+  }
+  :is(#build-care, #design-deliver, #personal-practical-support) .svc-price-secondary {
+    margin-top: .65rem;
+    padding-top: .48rem;
+  }
+  :is(#build-care, #design-deliver, #personal-practical-support) .svc-details {
+    padding-block: .6rem;
+  }
+  :is(#build-care, #design-deliver, #personal-practical-support) .svc-card-link {
+    margin-top: .68rem;
+  }
+}
+
+@media (min-width: 901px) {
+  .portfolio-home .selected-work .project-card:not(.project-featured) .project-visual {
+    min-height: 0;
+    height: clamp(182px, 16vw, 215px);
+  }
+  .portfolio-home .selected-work .project-featured .project-visual {
+    min-height: 205px;
+  }
+  .portfolio-home .selected-work .project-photo > img { min-height: 0; }
+  .portfolio-home .selected-work .project-photo-overlay { padding: 1.15rem 1.25rem; }
+  .portfolio-home .selected-work .project-photo-overlay strong {
+    font-size: clamp(1.75rem, 2.8vw, 2.7rem);
+  }
+  .portfolio-home .experience .timeline article {
+    grid-template-columns: 130px minmax(220px, .8fr) 1.2fr;
+    gap: 1.2rem;
+  }
+}
+
+/* Keep cards readable as widths collapse; no forced viewport-height sections. */
+@media (max-width: 900px) {
+  .portfolio-home .capability-card { min-height: 175px; }
+  .portfolio-home .selected-work .project-photo-overlay { padding: 1.2rem; }
+}
+@media (max-width: 700px) {
+  .portfolio-home .selected-work .project-body { padding: 1.15rem; }
+  .portfolio-home .selected-work .project-visual { min-height: 205px; }
+  .portfolio-home .section.experience { padding-top: 1.75rem; }
+  .portfolio-home .work-paths .path-card { padding: 1.4rem; }
+}
